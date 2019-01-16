@@ -16,14 +16,20 @@ function selectionSort(arr = []) {
         }
         // if the minimum isn't the temp position, swap it
         if(i != min) {
-            // swap(result, i, min);
-            let temp = result[min];
-            result[min] = result[i];
-            result[i] = temp;
+            swap(result, i, min);
+            // let temp = result[min];
+            // result[min] = result[i];
+            // result[i] = temp;
         }
     }
     return result;
 
+}
+
+function swap(result, firstIndex, secondIndex) {
+    let temp = result[firstIndex];
+    result[firstIndex] = result[secondIndex];
+    result[secondIndex] = temp;
 }
 
 console.log(selectionSort([2, 1, 4, 3, 5])); // [1,2,3,4,5]
