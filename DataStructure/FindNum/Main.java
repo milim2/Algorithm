@@ -1,3 +1,4 @@
+// find Max num and second max num
 public class Main {
 
     public static void main(String[] args) {
