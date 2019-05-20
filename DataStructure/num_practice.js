@@ -1,3 +1,28 @@
+function oddNumbers(l, r) {
+  let arr = [];
+  let smaller = l<r ? l : r;
+  let larger = smaller === l ? r: l;
+  let smallerOdd = !(smaller%2 === 0) ? true: false;
+  for (let i=smaller; i<=larger; i+=2) {
+    if (smallerOdd) {
+      arr.push(i);
+    } else {
+      arr.push(i+1)
+    }
+  }
+  return arr;
+}
+
+
+function findNumbers (arr, k) {
+  for (let i=0; i<arr.length; i++) {
+    if (arr[i] === k) {
+      return 'YES'
+    }
+  } return 'NO'
+}
+
+
 function diagonalDifference(arr) {
 
     var LeftD = 0, RightD = 0;
