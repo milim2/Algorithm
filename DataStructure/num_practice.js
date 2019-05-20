@@ -57,6 +57,13 @@ function solveMeFirst(a, b) {
 }
 
 
+function reverseArray(a) {
+    var arr = a.reverse();
+    return arr;
+}
+
+
+
 
 
     
