@@ -49,4 +49,7 @@ function addClickFunctionality(button, num) {
   }
 }
  
+createButtons();
+
+
 
