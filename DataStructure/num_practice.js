@@ -111,6 +111,24 @@ function hourglassSum(arr) {
     return Tsum;
 }
 
+--------------------------------------------------------------------------------
+
+function harshadNum(n){
+let arr = n.toString().split(''),
+    sum = 0;
+for(let i=0; i<arr.length; i++) {
+  sum += parseInt(arr[i]);
+}
+
+if(n%sum == 0)
+return true;
+else false;
+}
+
+console.log(harshadNum(18));
+
+
+function Harshad(n){ return !(n%(n+'').split('').reduce(function (i, sum) {return +sum + +i;})); }  console.log(Harshad(18))
 
 
 
